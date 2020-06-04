@@ -1,0 +1,2 @@
+ATS:Auxiliary Telescope Spectrograph (obsolete) now LATISS
+LVV:LSST Verification and Validation (Jira project)
