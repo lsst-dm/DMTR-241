@@ -1,0 +1,40 @@
+Alert
+Alert Production
+Baseline
+Butler
+Center
+Data Management
+Data Management System
+Data Management Subsystem
+Data Release
+Data Release Production
+Db
+Document
+Operations
+Raft
+Release
+Science Pipelines
+Science Platform
+Scope
+Subsystem
+Summit
+Validation
+Verification
+Visit
+astrometry
+background
+calibration
+camera
+configuration
+data repository
+eups
+flux
+metadata
+metric
+patch
+pipeline
+provenance
+sqlite3
+stack
+tract
+

@@ -1,0 +1,818 @@
+\documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
+\usepackage{geometry}
+\usepackage{longtable,booktabs}
+\usepackage{enumitem}
+\usepackage{arydshln}
+\usepackage{attachfile}
+\usepackage{array}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+\input meta.tex
+
+\newcommand{\attachmentsUrl}{https://github.com/\gitorg/\lsstDocType-\lsstDocNum/blob/\gitref/attachments}
+\providecommand{\tightlist}{
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setcounter{tocdepth}{4}
+
+\begin{document}
+
+\def\milestoneName{Network Pre-Verification for Operation Rehearsal \#2}
+\def\milestoneId{LVV-P73}
+\def\product{Data Management}
+
+\setDocCompact{true}
+
+\title{LVV-P73: Network Pre-Verification for Operation Rehearsal \#2 Test Plan and Report}
+\setDocRef{\lsstDocType-\lsstDocNum}
+\date{\vcsdate}
+\author{ Jeff Kantor }
+
+\input{history_and_info.tex}
+
+
+\setDocAbstract{
+This is the test plan and report for LVV-P73 (Network Pre-Verification for Operation Rehearsal \#2),
+an LSST milestone pertaining to the Data Management Subsystem.
+}
+
+
+\maketitle
+
+\section{Introduction}
+\label{sect:intro}
+
+
+\subsection{Objectives}
+\label{sect:objectives}
+
+ This test campaign will verify that the network infrastructure is ready
+for Operation Rehearsal \#2.
+
+
+
+\subsection{System Overview}
+\label{sect:systemoverview}
+
+ The component of DM subsystem involved in this test campaign is the
+\textbf{Base to Archive} network.\\[2\baselineskip]\textbf{Applicable
+Documents:}\\[2\baselineskip]\citeds{LSE-61} Data Management System
+Requirements\\
+\citeds{LDM-732} Rubin Observatory Network Verification Baseline
+
+
+\subsection{Document Overview}
+\label{sect:docoverview}
+
+This document was generated from Jira, obtaining the relevant information from the
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73}
+~Jira Test Plan and related Test Cycles (
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C155}{LVV-C155}
+).
+
+Section \ref{sect:intro} provides an overview of the test campaign, the system under test (\product{}),
+the applicable documentation, and explains how this document is organized.
+Section \ref{sect:testplan} provides additional information about the test plan, like for example the configuration
+used for this test or related documentation.
+Section \ref{sect:personnel} describes the necessary roles and lists the individuals assigned to them.
+
+Section \ref{sect:overview} provides a summary of the test results, including an overview in Table \ref{table:summary},
+an overall assessment statement and suggestions for possible improvements.
+Section \ref{sect:detailedtestresults} provides detailed results for each step in each test case.
+
+The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73} in Jira is \textbf{ Approved }.
+
+\subsection{References}
+\label{sect:references}
+\renewcommand{\refname}{}
+\bibliography{lsst,refs,books,refs_ads,local}
+
+
+\newpage
+\section{Test Plan Details}
+\label{sect:testplan}
+
+
+\subsection{Data Collection}
+
+  Observing is not required for this test campaign.
+
+\subsection{Verification Environment}
+\label{sect:hwconf}
+  Base Facility La Serena, Base - Archive Network, Construction Data
+Facility at NCSA
+
+  \subsection{Entry Criteria}
+  ComCAM data staged in La Serena\\
+Base to Archive network functional\\
+Construction Data Facility ready to receive data
+
+  \subsection{Exit Criteria}
+  Data transferred\\
+Network monitoring logs captured.
+
+
+\subsection{Related Documentation}
+
+The documentation related to this test campaign should be provided in the following DocuShare Collection
+(as per Verification Artifacts in Jira test plan LVV-P73).
+
+\begin{itemize}
+\item Network monitoring logs
+\end{itemize}
+
+
+
+\subsection{PMCS Activity}
+
+Primavera milestones related to the test campaign.
+
+NA
+
+
+\newpage
+\section{Personnel}
+\label{sect:personnel}
+
+The personnel involved in the test campaign is shown in the following table.
+
+{\small
+\begin{longtable}{p{3cm}p{3cm}p{3cm}p{6cm}}
+\hline
+\multicolumn{2}{r}{T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73} owner:} &
+\multicolumn{2}{l}{\textbf{ Jeff Kantor } }\\\hline
+\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C155}{LVV-C155} owner:} &
+\multicolumn{2}{l}{\textbf{
+Jeff Kantor }
+} \\\hline
+\textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T193}{LVV-T193}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T194}{LVV-T194}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T195}{LVV-T195}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T196}{LVV-T196}
+& {\small Jeff Kantor } & {\small  } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\end{longtable}
+}
+
+\newpage
+
+\section{Test Campaign Overview}
+\label{sect:overview}
+
+\subsection{Summary}
+\label{sect:summarytable}
+
+{\small
+\begin{longtable}{p{2cm}cp{2.3cm}p{8.6cm}p{2.3cm}}
+\toprule
+\multicolumn{2}{r}{ T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ Network Pre-Verification for Operation Rehearsal \#2 }} & Approved \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C155}{LVV-C155}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ DM Network Testing for Operation Rehearsal \#2 }} & Not Executed \\\hline
+\textbf{Test Cases} &  \textbf{Ver.} & \textbf{Status} & \textbf{Comment} & \textbf{Issues} \\\toprule
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T193}{LVV-T193}
+&  1
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&
+\\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T194}{LVV-T194}
+&  1
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&
+\\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T195}{LVV-T195}
+&  1
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&
+\\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T196}{LVV-T196}
+&  1
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&
+\\\hline
+\caption{Test Campaign Summary}
+\label{table:summary}
+\end{longtable}
+}
+
+\subsection{Overall Assessment}
+\label{sect:overallassessment}
+
+Not yet available.
+
+\subsection{Recommended Improvements}
+\label{sect:recommendations}
+
+Not yet available.
+
+\newpage
+\section{Detailed Test Results}
+\label{sect:detailedtestresults}
+
+\subsection{Test Cycle LVV-C155 }
+
+Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/LVV-C155}{DM Network Testing for Operation Rehearsal \#2}} in Jira.
+
+Test Cycle name: DM Network Testing for Operation Rehearsal \#2\\
+Status: Not Executed
+
+This test cycle includes the list of test cases required to verify the
+network infrastructure in the context of this test campaign.
+
+\subsubsection{Software Version/Baseline}
+Not provided.
+
+\subsubsection{Configuration}
+Not provided.
+
+\subsubsection{Test Cases in LVV-C155 Test Cycle}
+
+\paragraph{ LVV-T193 - Verify implementation of Base to Archive Network }\mbox{}\\
+
+Version \textbf{1}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T193}{\textit{ LVV-T193 } }
+test case in Jira.
+
+Verify that the data acquired by a DAQ can be transferred within the
+required time, i.e. verify that link is capable of transferring image
+for prompt processing in oArchiveMaxTransferTime = 5{[}second{]}, i.e.
+at or exceeding rates specified in \citeds{LDM-142}.
+
+\textbf{ Preconditions}:\\
+Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+loaded with simulated or pre-cursor data.\\
+Archiver/Forwarder receivers or other capability is on configured at
+LDF, connected to Base - Archive Network.\\
+As-built documentation for all of the above is available.
+
+Execution status: {\bf Not Executed }
+
+Final comment:\\
+
+
+Detailed steps results:
+
+\begin{longtable}{p{1cm}p{15cm}}
+\hline
+{Step} & Step Details\\ \hline
+1 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Transfer data between base and archive while monitoring the network over
+uninterrupted 1 day period (with repeated transfers on normal observing
+cadence).
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+LATISS, ComCAM, or FullCAM data.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Data transfers occur without significant delay or frequent latency
+spikes.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+2 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+~Analyze the network logs and monitoring system to determine average and
+peak latency and packet loss statistics.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Data can be transferred within the required time, i.e. verify that link
+is capable of transferring image for prompt processing in
+oArchiveMaxTransferTime = 5{[}second{]}. Verify transfer of data at or
+exceeding rates specified in LDM-142 at least 98\% of the time.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+\end{longtable}
+
+\paragraph{ LVV-T194 - Verify implementation of Base to Archive Network Availability }\mbox{}\\
+
+Version \textbf{1}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T194}{\textit{ LVV-T194 } }
+test case in Jira.
+
+Verify the availability of the Base to Archive Network communications by
+demonstrating that it meets or exceeds a mean time between failures,
+measured over a 1-yr period of MTBF \textgreater{} baseToArchNetMTBF
+(180{[}day{]})
+
+\textbf{ Preconditions}:\\
+Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+loaded with simulated or pre-cursor data.\\
+Archiver/Forwarder receivers or other capability is on configured at
+LDF, connected to Base - Archive Network.\\
+At least 6 months of historical monitoring data on this link is
+available.\\
+As-built documentation for all of the above is available.
+
+Execution status: {\bf Not Executed }
+
+Final comment:\\
+
+
+Detailed steps results:
+
+\begin{longtable}{p{1cm}p{15cm}}
+\hline
+{Step} & Step Details\\ \hline
+1 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Transfer data between base and archive over uninterrupted 1 week period.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+LATISS, ComCAM, or FullCAM data.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Data is successfully transferred during the entire week.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+2 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Analyze monitoring/performance data, compare to historical data, and
+extrapolate to a full year, average and peak throughput and latency.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+NA
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Extrapolated network availability meets baseToArchNetMTBF =
+180{[}day{]}. ~Note that this is for complete loss of transfer service
+(all paths), not a single path failure with successful fail-over.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+\end{longtable}
+
+\paragraph{ LVV-T195 - Verify implementation of Base to Archive Network Reliability }\mbox{}\\
+
+Version \textbf{1}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T195}{\textit{ LVV-T195 } }
+test case in Jira.
+
+Verify Base to Archive Network Reliability by demonstrating that the
+network can recover from outages within baseToArchNetMTTR =
+48{[}hour{]}.
+
+\textbf{ Preconditions}:\\
+Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+loaded with simulated or pre-cursor data.\\
+Archiver/Forwarder receivers or other capability is on configured at
+LDF, connected to Base - Archive Network.\\
+At least 6 months of monitoring data for this link is available.\\
+As-built documentation for all of the above is available.
+
+Execution status: {\bf Not Executed }
+
+Final comment:\\
+
+
+Detailed steps results:
+
+\begin{longtable}{p{1cm}p{15cm}}
+\hline
+{Step} & Step Details\\ \hline
+1 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Disconnect primary fiber on base side of Base - ~Archive network.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+LATISS, ComCAM, or FullCAM data.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Network fails over to secondary path.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+2 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Simulate diagnosis and repair by elapsed time.\\[2\baselineskip]
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+NA
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Wall clock advances by 48 hours. ~Data is successfully transferred over
+secondary path.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+3 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Reconnect primary fiber on base side of Base - Archive network.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+NA
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Network recovers to primary path.~
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+4 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Analyze fail-over and recovery times. ~Compare to historical data and
+extrapolate to MTTR.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Verify recovery can occur within baseToArchNetMTTR = 48{[}hour{]}.
+Demonstrate reconnection and recovery to transfer of data at or
+exceeding rates specified in LDM-142.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+\end{longtable}
+
+\paragraph{ LVV-T196 - Verify implementation of Base to Archive Network Secondary Link }\mbox{}\\
+
+Version \textbf{1}.
+Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T196}{\textit{ LVV-T196 } }
+test case in Jira.
+
+Verify Base to Archive Network Secondary Link failover and capacity, and
+subsequent recovery primary. Demonstrate the use of the secondary path
+in ``catch-up'' mode.
+
+\textbf{ Preconditions}:\\
+Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+loaded with simulated or pre-cursor data.\\
+Archiver/Forwarder receivers or other capability is on configured at
+LDF, connected to Base - Archive Network.\\
+As-built documentation for all of the above is available.
+
+Execution status: {\bf Not Executed }
+
+Final comment:\\
+
+
+Detailed steps results:
+
+\begin{longtable}{p{1cm}p{15cm}}
+\hline
+{Step} & Step Details\\ \hline
+1 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Transfer data between base and archive on primary links over
+uninterrupted 1 day period.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+LATISS, ComCAM, or FullCAM data.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Data is successfully transferred over primary link at or exceeding rates
+specified in LDM-142 throughout period.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+2 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Simulate outage by disconnecting fiber on primary fiber on Base side of
+Base - Archive Network.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+NA
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Network fails over to secondary links in \textless{}=60s
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+3 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Transfer data between base and archive over secondary equipment
+uninterrupted 1 day period.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+LATISS, ComCAM, or FullCAM data.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Data is successfully transferred over secondary link ~at or exceeding
+rates specified in LDM-142 throughout period.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+4 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Restore connection on primary link by reconnecting
+fiber.\\[2\baselineskip]
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+NA
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Network recovers to primary.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+5 & Description \\
+ & \begin{minipage}[t]{15cm}
+{\footnotesize
+Demonstrate use of secondary in catch-up mode.
+
+\medskip }
+\end{minipage}
+\\ \cdashline{2-2}
+
+ & Test Data \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+DAQ buffer full of images and associated metadata.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Expected Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+Images from DAQ buffer and associated metadata are retrievable over
+secondary path while current observing data is being transferred over
+primary path.
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Actual Result \\
+ & \begin{minipage}[t]{15cm}{\footnotesize
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+
+ & Status: \textbf{ Not Executed } \\ \hline
+
+\end{longtable}
+
+
+\input{appendix.tex}
+\end{document}
