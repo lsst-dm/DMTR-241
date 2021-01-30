@@ -1,9 +1,8 @@
 % generated from JIRA project LVV
-% using template at /usr/local/lib/python3.7/site-packages/docsteady/templates/dm-tpr.latex.jinja2.
-% using docsteady version 1.2rc24
+% using template at /usr/local/lib/python3.7/site-packages/docsteady/templates/tpr.latex.jinja2.
+% using docsteady version 2.0
 % Please do not edit -- update information in Jira instead
-
-\documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
+\documentclass[dm,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
 \usepackage{longtable,booktabs}
 \usepackage{enumitem}
@@ -321,73 +320,71 @@ Final comment:\\
 
 Detailed steps results:
 
-\begin{longtable}{p{1cm}p{15cm}}
-\hline
-{Step} & Step Details\\ \hline
-1 & Description \\
- & \begin{minipage}[t]{15cm}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 1 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Transfer data between base and archive while monitoring the network over
 uninterrupted 1 day period (with repeated transfers on normal observing
 cadence).
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 LATISS, ComCAM, or FullCAM data.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Data transfers occur without significant delay or frequent latency
 spikes.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-2 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 2 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 ~Analyze the network logs and monitoring system to determine average and
 peak latency and packet loss statistics.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Data can be transferred within the required time, i.e. verify that link
 is capable of transferring image for prompt processing in
 oArchiveMaxTransferTime = 5{[}second{]}. Verify transfer of data at or
 exceeding rates specified in LDM-142 at least 98\% of the time.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-\end{longtable}
+}
 
 \paragraph{ LVV-T194 - Verify implementation of Base to Archive Network Availability }\mbox{}\\
 
@@ -435,75 +432,75 @@ Final comment:\\
 
 Detailed steps results:
 
-\begin{longtable}{p{1cm}p{15cm}}
-\hline
-{Step} & Step Details\\ \hline
-1 & Description \\
- & \begin{minipage}[t]{15cm}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 1 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Transfer data between base and archive over uninterrupted 1 week period.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 LATISS, ComCAM, or FullCAM data.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Data is successfully transferred during the entire week.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-2 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 2 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Analyze monitoring/performance data, compare to historical data, and
 extrapolate to a full year, average and peak throughput and latency.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 NA
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Extrapolated network availability meets baseToArchNetMTBF =
 180{[}day{]}. ~Note that this is for complete loss of transfer service
 (all paths), not a single path failure with successful fail-over.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-\end{longtable}
+}
 
 \paragraph{ LVV-T195 - Verify implementation of Base to Archive Network Reliability }\mbox{}\\
 
@@ -549,132 +546,134 @@ Final comment:\\
 
 Detailed steps results:
 
-\begin{longtable}{p{1cm}p{15cm}}
-\hline
-{Step} & Step Details\\ \hline
-1 & Description \\
- & \begin{minipage}[t]{15cm}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 1 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Disconnect primary fiber on base side of Base - ~Archive network.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 LATISS, ComCAM, or FullCAM data.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Network fails over to secondary path.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-2 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 2 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Simulate diagnosis and repair by elapsed time.\\[2\baselineskip]
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 NA
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Wall clock advances by 48 hours. ~Data is successfully transferred over
 secondary path.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-3 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 3 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Reconnect primary fiber on base side of Base - Archive network.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 NA
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Network recovers to primary path.~
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-4 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 4 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Analyze fail-over and recovery times. ~Compare to historical data and
 extrapolate to MTTR.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Verify recovery can occur within baseToArchNetMTTR = 48{[}hour{]}.
 Demonstrate reconnection and recovery to transfer of data at or
 exceeding rates specified in LDM-142.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-\end{longtable}
+}
 
 \paragraph{ LVV-T196 - Verify implementation of Base to Archive Network Secondary Link }\mbox{}\\
 
@@ -718,173 +717,180 @@ Final comment:\\
 
 Detailed steps results:
 
-\begin{longtable}{p{1cm}p{15cm}}
-\hline
-{Step} & Step Details\\ \hline
-1 & Description \\
- & \begin{minipage}[t]{15cm}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 1 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Transfer data between base and archive on primary links over
 uninterrupted 1 day period.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 LATISS, ComCAM, or FullCAM data.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Data is successfully transferred over primary link at or exceeding rates
 specified in LDM-142 throughout period.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-2 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 2 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Simulate outage by disconnecting fiber on primary fiber on Base side of
 Base - Archive Network.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 NA
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Network fails over to secondary links in \textless{}=60s
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-3 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 3 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Transfer data between base and archive over secondary equipment
 uninterrupted 1 day period.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 LATISS, ComCAM, or FullCAM data.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Data is successfully transferred over secondary link ~at or exceeding
 rates specified in LDM-142 throughout period.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-4 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 4 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Restore connection on primary link by reconnecting
 fiber.\\[2\baselineskip]
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 NA
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Network recovers to primary.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
-
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-5 & Description \\
- & \begin{minipage}[t]{15cm}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 5 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\toprule
+ & Description \\ \hline
+\end{tabular}
 {\footnotesize
 Demonstrate use of secondary in catch-up mode.
 
-\medskip }
-\end{minipage}
-\\ \cdashline{2-2}
-
- & Test Data \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Test Data \\ \hline
+\end{tabular}
+ {\footnotesize
 DAQ buffer full of images and associated metadata.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Expected Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Expected Result \\ \hline
+\end{tabular}
+{\footnotesize
 Images from DAQ buffer and associated metadata are retrievable over
 secondary path while current observing data is being transferred over
 primary path.
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\hline
+ & Actual Result \\ \hline
+\end{tabular}
+{\footnotesize
 
- & Actual Result \\
- & \begin{minipage}[t]{15cm}{\footnotesize
+}
 
-\medskip }
-\end{minipage} \\ \cdashline{2-2}
-
- & Status: \textbf{ Not Executed } \\ \hline
-
-\end{longtable}
 
 
 \input{appendix.tex}
