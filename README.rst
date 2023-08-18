@@ -7,6 +7,6 @@
 DMTR-241
 ########
 
-Network Acceptance tTest Campaign 1
+Network Acceptance Test Campaign 1
 
 To regenerate from Jira use the github action "docgen from Jira" on your branch. 
