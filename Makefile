@@ -1,7 +1,9 @@
 DOCTYPE = DMTR
+NAMESPACE = DM
+PLAN = LVV-P73
 DOCNUMBER = 241
 DOCNAME = $(DOCTYPE)-$(DOCNUMBER)
-JOBNAME = $(DOCNAME)
+DOCNAMEP = $(DOCNAME)-plan
 TEX = $(filter-out $(wildcard *acronyms.tex) , $(wildcard *.tex))
 
 export TEXMFHOME ?= lsst-texmf/texmf
@@ -14,23 +16,30 @@ ifneq "$(GITSTATUS)" ""
 	GITDIRTY = -dirty
 endif
 
-$(JOBNAME).pdf: $(DOCNAME).tex meta.tex acronyms.tex
-	xelatex -jobname=$(JOBNAME) $(DOCNAME)
-	bibtex $(JOBNAME)
-	xelatex -jobname=$(JOBNAME) $(DOCNAME)
-	xelatex -jobname=$(JOBNAME) $(DOCNAME)
-	xelatex -jobname=$(JOBNAME) $(DOCNAME)
+all:  $(DOCNAME).pdf $(DOCNAMEP).pdf
+
+%.pdf: %.tex meta.tex acronyms.tex
+	xelatex $<
+	bibtex $(basename $<)
+	xelatex $<
+	xelatex $<
+	xelatex $<
+
 
 .FORCE:
 
 meta.tex: Makefile .FORCE
 	rm -f $@
 	touch $@
-	echo '% GENERATED FILE -- edit this in the Makefile' >>$@
-	/bin/echo '\newcommand{\lsstDocType}{$(DOCTYPE)}' >>$@
-	/bin/echo '\newcommand{\lsstDocNum}{$(DOCNUMBER)}' >>$@
-	/bin/echo '\newcommand{\vcsrevision}{$(GITVERSION)$(GITDIRTY)}' >>$@
-	/bin/echo '\newcommand{\vcsdate}{$(GITDATE)}' >>$@
+	printf '%% GENERATED FILE -- edit this in the Makefile\n' >>$@
+	printf '\\newcommand{\\lsstDocType}{$(DOCTYPE)}\n' >>$@
+	printf '\\newcommand{\\lsstDocNum}{$(DOCNUMBER)}\n' >>$@
+	printf '\\newcommand{\\vcsRevision}{$(GITVERSION)$(GITDIRTY)}\n' >>$@
+	printf '\\newcommand{\\vcsDate}{$(GITDATE)}\n' >>$@
+
+
+generate: .FORCE
+	docsteady --namespace $(NAMESPACE) generate-tpr $(PLAN) $(DOCNAME).tex
 
 
 #Traditional acronyms are better in this document
