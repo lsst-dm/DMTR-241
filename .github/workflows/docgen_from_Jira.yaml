@@ -26,7 +26,7 @@ jobs:
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
           ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
         run: |
-          docsteady  --namespace DM generate-tpr LVV-P73  DMTR-241.tex
+          docsteady  --namespace DM generate-tpr --includeall True LVV-P73  DMTR-241.tex
         shell: bash
 
       - name: Create commit
